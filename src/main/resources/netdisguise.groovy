@@ -1,0 +1,52 @@
+userAgents = [
+  'Mozilla/5.0 (X11; Linux x86.64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.99 Safari/537.36',
+  'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36',
+  'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:35.0) Gecko/20100101 Firefox/35.0',
+  'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:38.0) Gecko/20100101 Firefox/38.0',
+  'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:33.0) Gecko/20100101 Firefox/33.0',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0',
+  'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko',
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/600.3.18 (KHTML, like Gecko) Version/8.0.3 Safari/600.3.18',
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/600.6.3 (KHTML, like Gecko) Version/8.0.6 Safari/600.6.3',
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:35.0) Gecko/20100101 Firefox/35.0',
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.10; rv:38.0) Gecko/20100101 Firefox/38.0',
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.115 Safari/537.36',
+  'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36'
+]
+
+proxyDefaultPort = '80'
+
+proxies = [
+  '5.104.105.217',
+  '5.104.105.240',
+  '5.45.183.227',
+  '5.45.183.229',
+  '78.46.164.87',
+  '78.129.219.176',
+  '78.129.219.178',
+  '78.129.219.185',
+  '78.129.219.188',
+  '78.129.219.189',
+  '78.157.210.20',
+  '78.46.164.86',
+  '87.117.255.241',
+  '88.150.196.154',
+  '88.198.211.59',
+  '88.198.211.60',
+  '88.198.211.61',
+  '95.141.33.54',
+  '95.141.33.57',
+  '95.141.33.60',
+  '95.141.33.63',
+  '95.141.33.146',
+  '95.141.33.216',
+  '95.141.33.217',
+  '95.141.46.223',
+  '95.141.46.224',
+  '95.141.46.238',
+  '95.154.229.209',
+  '95.154.229.214',
+  '177.85.101.141'
+]

@@ -1,0 +1,59 @@
+/* Cobertura Code Coverage Plugin (NB: this have to be placed BEFORE the groovy plugin to work)*/
+plugins {
+  id 'net.saliman.cobertura' version '2.3.1'
+}
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+apply plugin: 'codenarc'
+apply plugin: 'application'
+
+repositories {
+  jcenter()
+}
+
+dependencies {
+  // groovy language support
+  compile 'org.codehaus.groovy:groovy-all:2.4.6'
+  // html parsing
+  compile 'org.jsoup:jsoup:1.9.1'
+  // logging
+  compile 'org.slf4j:slf4j-simple:1.7.21'
+  // concurrency
+  compile 'org.codehaus.gpars:gpars:1.2.1'
+
+  // Spock test framework
+  testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+}
+
+/* Task 'jar': load into the jar all the project deps
+ * NB: maybe we can obtain the same with a task of the 'application' plugin */
+jar {
+  from configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+}
+
+/* Plugin: 'codenarc' */
+codenarcMain {
+  configFile = rootProject.file('config/codenarc/codenarcMain.groovy')
+}
+
+codenarcTest {
+  configFile = rootProject.file('config/codenarc/codenarcTest.groovy')
+}
+
+/* Plugin: 'application' */
+mainClassName = 'it.seatpg.rnd.Launcher'
+// For parallel execution with GPars
+//mainClassName = 'it.seatpg.rnd.PLauncher'
+//sourceCompatibility = 1.7
+//targetCompatibility = 1.7
+//tasks.withType(JavaCompile) {
+  ////sourceCompatibility = '1.7'
+  ////targetCompatibility = '1.7'
+  //doFirst {
+    //if (sourceCompatibility == '1.7' && System.env.JAVA_HOME != null) {
+      //options.fork           = true
+      //options.bootClasspath  = "$System.env.JAVA_HOME/jre/lib/rt.jar"
+      //options.bootClasspath += "$File.pathSeparator$System.env.JAVA_HOME/jre/lib/jsse.jar"
+    //}
+  //}
+//}

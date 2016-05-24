@@ -1,5 +1,19 @@
 .gradle
+
+# output directory
 build/
+
+# eclim daemon conf file
+workspace.xml
+
+# eclim/eclipse specific file
+.classpath
+.project
+.settings/
+bin/
+
+# Vim
+*.sw[op]
 
 # Ignore Gradle GUI config
 gradle-app.setting
