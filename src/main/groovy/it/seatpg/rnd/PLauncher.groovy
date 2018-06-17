@@ -29,8 +29,8 @@ class PLauncher {
    */
   static void main(String... args) {
 
-    String        urlHead   = 'http://www.alexa.com/topsites/countries;'
-    String        urlTail   = '/IT'
+    final String  urlHead   = 'http://www.alexa.com/topsites/countries;'
+    final String  urlTail   = '/IT'
     // each page contains 25 site:
     // 0:[1-25], 1:[26-50], 2:[51-75], 3:[76-100]
     List<Integer> range     = [0, 1, 2, 3]
